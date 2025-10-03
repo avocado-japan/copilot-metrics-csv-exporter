@@ -1,0 +1,13 @@
+name: PR Hello
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Say Hello
+        run: echo "hello"
